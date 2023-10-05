@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Nuxt3 Jamstack Blogs</h1>
+    <h1 class="mb-4 text-2xl font-extrabold text-gray-900 dark:text-white md:text-4xl lg:text-5xl">Nuxt3 Jamstack Blogs</h1>
     <ul class="mt-16 grid grid-cols-1 gap-8">
       <li v-for="blog in data?.contents" :key="blog.id">
         <NuxtLink
