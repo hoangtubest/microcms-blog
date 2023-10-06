@@ -6,7 +6,7 @@
       <div class="header-nav">
         <ul class="flex gap-5 text-l uppercase font-bold">
           <li>
-            <nuxt-link to="/post">Column</nuxt-link>
+            <nuxt-link to="/column">Column</nuxt-link>
           </li>
           <li>
             <nuxt-link to="/about">About</nuxt-link>

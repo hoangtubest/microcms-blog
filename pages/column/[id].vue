@@ -14,11 +14,11 @@
     <div
       class="mt-4 flex flex-col items-start gap-2 md:flex-row md:items-center md:gap-4"
     >
-      <div
-        class="rounded border-2 border-indigo-600 px-1.5 py-0.5 text-sm font-semibold text-indigo-600"
+      <NuxtLink :to="`/column/category/${data.category?.id}`"
+        class="rounded border-2 border-indigo-600 px-1.5 py-0.5 text-sm font-semibold text-indigo-600 hover:text-white hover:bg-indigo-600 sm:transition"
       >
         {{ data.category?.name }}
-      </div>
+      </NuxtLink>
       <div class="text-sm text-gray-700">
         {{ dateFormat(data.publishedAt ?? data.createdAt) }}
       </div>
