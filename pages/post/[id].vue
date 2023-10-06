@@ -26,13 +26,13 @@
     <div v-html="data.content" class="prose mt-6 md:mt-10"></div>
   </template>
   <div class="flex justify-center mt-6 md:mt-10">
-    <NuxtLink to="/" class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-8 border-b-4 border-blue-700 hover:border-blue-500 rounded">Back Top</NuxtLink>
+    <NuxtLink to="./" class="bg-indigo-500 hover:bg-indigo-400 text-white font-bold py-2 px-8 border-b-4 border-indigo-700 hover:border-indigo-500 rounded">Back Column</NuxtLink>
   </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { Blog } from "~/types/blog";
+import { Blog } from "~/~/types/blog";
 
 const { params } = useRoute();
 
