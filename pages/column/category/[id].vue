@@ -1,6 +1,7 @@
 <template>
   <div>
-    <blog-column :categoryId="categoryId" />
+    <!-- <blog-column :categoryId="categoryId" /> -->
+    <blog-column />
   </div>
 </template>
 

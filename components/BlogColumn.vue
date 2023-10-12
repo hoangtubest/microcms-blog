@@ -10,7 +10,7 @@
   </ul>
 
   <ul class="mt-16 grid grid-cols-1 gap-8">
-    <li v-for="blog in filteredBlogs" :key="blog.id">
+    <li v-for="blog in dataBlog?.contents" :key="blog.id">
       <NuxtLink
         :to="`/column/${blog.id}`"
         class="flex flex-col gap-4 sm:transition sm:hover:shadow md:flex-row md:items-center lg:gap-6 sm:hover:bg-gray-50"
@@ -56,7 +56,7 @@
     endpoint: "blogs",
   });
 
-  // console.log(dataBlog);
+  console.log(dataBlog);
 
 
   const { data: dataCategories } = await useMicroCMSGetList<Category>({
@@ -65,13 +65,13 @@
 
   // console.log(dataCategories);
 
-  const filteredBlogs = computed(() => {
-    if (props.categoryId) {
-      return dataBlog?.contents.filter((blog: Blog) => blog?.category.id === props.categoryId);
-    } else {
-      return dataBlog?.contents;
-    }
-  });
+  // const filteredBlogs = computed(() => {
+  //   if (props.categoryId) {
+  //     return dataBlog?.contents.filter((blog: Blog) => blog?.category.id === props.categoryId);
+  //   } else {
+  //     return dataBlog?.contents;
+  //   }
+  // });
 
-  console.log(filteredBlogs);
+  // console.log(filteredBlogs);
 </script>
